@@ -31,7 +31,7 @@ const artistNames       = document.getElementById("artistNamesList");
 const artistWork        = document.getElementById("artistListWork");
 const nameArtist        = document.getElementById("artistNameDetail");
 const decriptionArtist  = document.getElementById("artistDescriptionDetail");
-let namesFromJson;      
+var  $namesFromJson;      
 /*itemName =document.createElement("LI");
 itemName.textContent="Alfredo Arcos";
 itemName.classList.add("color");
@@ -59,7 +59,7 @@ function readObjet()
       /* for(let item of arrayinobjet){
         item.artista
        }*/
-       let namesFromJson = datos.authors;
+       var $namesFromJson = datos.authors;
        console.log(datos.authors);
        for(let artist of datos.authors){
         console.log(artist.author);
@@ -70,7 +70,31 @@ function readObjet()
 }
 
 var i =0;
-namesFromJson.forEach( function(elemento ,i,namesFromJson ){
+
+for (let artist of $namesFromJson){
+  var itemName = document.createElement("LI");
+  var       a = document.createElement("button");
+  var       il = document.createElement("i");
+  var       span = document.createElement("span");
+
+
+itemName.classList.add("color");
+a.setAttribute('class', 'btn btn-lg btn-success animationNameArtist');
+a.setAttribute('id',elemento.id);
+
+a.onclick = function(){
+    showartistGalleryDetails(elemento);
+};
+
+
+span.textContent= elemento.author;
+il.classList.add("glyphicon","glyphicon-dashboard","pull-left");
+a.appendChild(il);
+a.appendChild(span);
+itemName.appendChild(a);
+artistNames.appendChild(itemName);
+}
+/*$namesFromJson.forEach( function(elemento ,i,$namesFromJson ){
 
 var itemName = document.createElement("LI");
 var       a = document.createElement("button");
@@ -80,7 +104,6 @@ var       span = document.createElement("span");
 
 itemName.classList.add("color");
 a.setAttribute('class', 'btn btn-lg btn-success animationNameArtist');
-//a.classList.add("btn btn-lg btn-success","animationNameArtist");
 a.setAttribute('id',elemento+i);
 
 a.onclick = function(){
@@ -95,7 +118,7 @@ a.appendChild(span);
 itemName.appendChild(a);
 artistNames.appendChild(itemName);
 
-})
+})*/
 
 function showartistGalleryDetails(Artist)
 {
