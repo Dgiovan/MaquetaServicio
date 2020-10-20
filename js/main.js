@@ -61,7 +61,7 @@ function readObjet()
         item.artista
        }*/
        $Data= datos.authors;
-       console.log($Data);
+       console.log("haaastalama"+$Data);
        showButtonsArtist(datos.authors);
        console.log(datos.authors);
        for(let artist of datos.authors){
@@ -71,7 +71,7 @@ function readObjet()
      }
   }
 }
-
+console.log("aaaaa2222"+$Data);
 
 function showButtonsArtist(namesFromJson){
 
