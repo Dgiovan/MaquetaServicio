@@ -1,0 +1,21 @@
+.btnAnimation{
+	animation: bounce;
+	animation-duration: 1s ;
+}
+
+.sectionupAnimate{
+	animation:backInUp;
+	animation-duration: 0.5s;
+}
+
+.animationNameArtist{
+	animation: zoomIn;
+	animation-delay: 1s;
+	animation-duration: 4s;
+}
+
+.animationWorks{
+	animation: flipInX;
+	animation-delay: 2s;
+	animation-duration: 2s;
+}
