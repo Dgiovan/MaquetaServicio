@@ -72,6 +72,7 @@ function readObjet()
 function showButtonsArtist(namesFromJson){
 
 for (let artist of namesFromJson){
+
   var itemName = document.createElement("LI");
   var       a = document.createElement("button");
   var       il = document.createElement("i");
@@ -80,14 +81,14 @@ for (let artist of namesFromJson){
 
 itemName.classList.add("color");
 a.setAttribute('class', 'btn btn-lg btn-success animationNameArtist');
-a.setAttribute('id',elemento.id);
+a.setAttribute('id',artist.id);
 
 a.onclick = function(){
-    showartistGalleryDetails(elemento);
+    showartistGalleryDetails(artist.author);
 };
 
 
-span.textContent= elemento.author;
+span.textContent= artist.author;
 il.classList.add("glyphicon","glyphicon-dashboard","pull-left");
 a.appendChild(il);
 a.appendChild(span);
