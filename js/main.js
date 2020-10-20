@@ -21,7 +21,7 @@ function readObjet()
   const xhttp = new XMLHttpRequest();
 
 //http metod , ruta, asyncrono
-  xhttp.open('GET','jsons/works.json.json',true);
+  xhttp.open('GET','jsons/works.json',true);
 
   xhttp.send();
 
