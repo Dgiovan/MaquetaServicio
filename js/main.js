@@ -60,6 +60,7 @@ function readObjet()
         item.artista
        }*/
        var $namesFromJson = datos.authors;
+       showButtonsArtist(namesFromJson);
        console.log(datos.authors);
        for(let artist of datos.authors){
         console.log(artist.author);
