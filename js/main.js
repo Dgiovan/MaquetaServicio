@@ -31,7 +31,6 @@ const artistNames       = document.getElementById("artistNamesList");
 const artistWork        = document.getElementById("artistListWork");
 const nameArtist        = document.getElementById("artistNameDetail");
 const decriptionArtist  = document.getElementById("artistDescriptionDetail");
-var  $namesFromJson;      
 /*itemName =document.createElement("LI");
 itemName.textContent="Alfredo Arcos";
 itemName.classList.add("color");
@@ -59,8 +58,7 @@ function readObjet()
       /* for(let item of arrayinobjet){
         item.artista
        }*/
-       var $namesFromJson = datos.authors;
-       showButtonsArtist(namesFromJson);
+       showButtonsArtist(datos.authors);
        console.log(datos.authors);
        for(let artist of datos.authors){
         console.log(artist.author);
