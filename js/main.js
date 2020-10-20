@@ -30,6 +30,13 @@ function readObjet()
      {
        //console.log(this.responseText);
        let datos = JSON.parse(this.responseText);
+      /* for(let item of arrayinobjet){
+        item.artista
+       }*/
+       console.log(datos.authors);
+       for(let artist of datos.authors){
+        console.log(artist.author);
+       }
        console.log(datos);
      }
   }
