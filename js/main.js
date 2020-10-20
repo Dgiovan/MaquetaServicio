@@ -69,9 +69,10 @@ function readObjet()
   }
 }
 
-var i =0;
 
-for (let artist of $namesFromJson){
+function showButtonsArtist(namesFromJson){
+
+for (let artist of namesFromJson){
   var itemName = document.createElement("LI");
   var       a = document.createElement("button");
   var       il = document.createElement("i");
@@ -94,6 +95,11 @@ a.appendChild(span);
 itemName.appendChild(a);
 artistNames.appendChild(itemName);
 }
+
+}
+//var i =0;
+
+
 /*$namesFromJson.forEach( function(elemento ,i,$namesFromJson ){
 
 var itemName = document.createElement("LI");
