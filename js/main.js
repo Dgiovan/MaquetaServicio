@@ -14,6 +14,32 @@ function show(){
   
 }
 
+
+
+
+//const names =["Alfredo Arcos", "Martín Cuaya", "Lazaro Galicia", "Juan Palmerin (+)"," Mauricio Vega", "Ozcar Rivera", "David Duanny", "Alejandro Pérez Cruz", "Ismael Ponce", "Gustavo López", "CHEZ TREN 77", "Lupus", "Tacho(+)","Pablo Morán"];
+var $obras = {"Alfredo Arcos" : [["obras/obra-1.jpg",
+                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                                         "Titulo Obra","Año obra","Tecnica obra","medidas obra"],
+                                ["obras/obra-2.jpg",
+                                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                                         "Titulo Obra","Año obra","Tecnica obra","medidas obra"],
+                                ["obras/obra-3.jpg","Lorem ipsum dolor sit amet, consectetur adipiscing elit. totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+                                         "Titulo Obra","Año obra","Tecnica obra","medidas obra"] ]};
+
+const artistNames       = document.getElementById("artistNamesList");
+const artistWork        = document.getElementById("artistListWork");
+const nameArtist        = document.getElementById("artistNameDetail");
+const decriptionArtist  = document.getElementById("artistDescriptionDetail");
+let namesFromJson;      
+/*itemName =document.createElement("LI");
+itemName.textContent="Alfredo Arcos";
+itemName.classList.add("color");
+
+artistNames.appendChild(itemName);*/
+
+
+
 function readObjet()
 {
   console.log("dentro de la funcion");
@@ -33,6 +59,7 @@ function readObjet()
       /* for(let item of arrayinobjet){
         item.artista
        }*/
+       let namesFromJson = datos.authors;
        console.log(datos.authors);
        for(let artist of datos.authors){
         console.log(artist.author);
@@ -42,29 +69,8 @@ function readObjet()
   }
 }
 
-
-const names =["Alfredo Arcos", "Martín Cuaya", "Lazaro Galicia", "Juan Palmerin (+)"," Mauricio Vega", "Ozcar Rivera", "David Duanny", "Alejandro Pérez Cruz", "Ismael Ponce", "Gustavo López", "CHEZ TREN 77", "Lupus", "Tacho(+)","Pablo Morán"];
-var $obras = {"Alfredo Arcos" : [["obras/obra-1.jpg",
-                                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-                                         "Titulo Obra","Año obra","Tecnica obra","medidas obra"],
-                                ["obras/obra-2.jpg",
-                                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-                                         "Titulo Obra","Año obra","Tecnica obra","medidas obra"],
-                                ["obras/obra-3.jpg","Lorem ipsum dolor sit amet, consectetur adipiscing elit. totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-                                         "Titulo Obra","Año obra","Tecnica obra","medidas obra"] ]};
-
-const artistNames       = document.getElementById("artistNamesList");
-const artistWork        = document.getElementById("artistListWork");
-const nameArtist        = document.getElementById("artistNameDetail");
-const decriptionArtist  = document.getElementById("artistDescriptionDetail");
-
-/*itemName =document.createElement("LI");
-itemName.textContent="Alfredo Arcos";
-itemName.classList.add("color");
-
-artistNames.appendChild(itemName);*/
 var i =0;
-names.forEach( function(elemento ,i,names ){
+namesFromJson.forEach( function(elemento ,i,namesFromJson ){
 
 var itemName = document.createElement("LI");
 var       a = document.createElement("button");
