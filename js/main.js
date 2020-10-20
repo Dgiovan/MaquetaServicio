@@ -1,8 +1,10 @@
+let Data = new Array();
 function dismis(){
 	//alert("se oculta");
 	document.getElementById('exhibitionInfo').style.display="none";
   var nomber= Math.random(328762836386);
   console.log(nomber);
+  readObjet();
 }
 
 function show(){
@@ -58,6 +60,8 @@ function readObjet()
       /* for(let item of arrayinobjet){
         item.artista
        }*/
+       $Data= datos.authors;
+       console.log($Data);
        showButtonsArtist(datos.authors);
        console.log(datos.authors);
        for(let artist of datos.authors){
