@@ -274,9 +274,8 @@ function showartistGalleryDetails(Artist)
 
            footerCard.appendChild(buttonwork);
 
-
-           workCard.appendChild(image);
            workCard.appendChild(cardBlog);  
+           workCard.appendChild(image);
            workCard.appendChild(footerCard);  
            work.appendChild(workCard);    
            artistWork.appendChild(work);
