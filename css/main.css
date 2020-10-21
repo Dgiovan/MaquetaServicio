@@ -2,41 +2,53 @@ body{
 	background-color: #F2F2F2; 
 }
 
-.textColorWhite{
-color : #ffffff; 
-}
+.textColorWhite{color : #ffffff; }
+.texcolorGray{color : #F2F2F2;}
+
 .textColorBoldWhite{
 color : #ffffff; 
 font: bold;
 }
 
-
-p{
-    margin: 30px;
+.textColorBoldGray{
+color : #F2F2F2; 
+font: bold;
 }
 
-.simpleMargin{
-    margin: 20px;
+.mbanner{
+        padding: 12em 0 10em 0 ;
+        background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
+        background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
+        background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
+        background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
 }
 
-	header {
-		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../img/principal.png");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-align: center;
-	}
+header {
+    background-color: white;
+    padding: 5px 15px;
+    position: sticky !important;
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+header img{
+    height: 89px;
+    margin-right: 20px;
+}
 
 
 .background_gray{
 	background-color: #B5B5B5;
 }
-
+.background_black{
+    background-color: #000000;
+}
 .background_orange{
     background-color: #b64225;
 }
@@ -171,6 +183,15 @@ h5 {
 float: left;
 width: 25%;
 max-width: 100%; } }
-
 .carousel-multi-item-2 .card img {
 border-radius: 2px; }
+
+.d-contents{ display: contents; }
+.fx-betwen{ display: flex; align-items: center; justify-content: space-between; }
+.fx-around{ display: flex; align-items: center; justify-content: space-around; }
+.fx-center{ display: flex; align-items: center; justify-content: center; }
+.fx-wrap{ flex-wrap: wrap; }
+
+.simpleMargin{
+    margin: 20px;
+}

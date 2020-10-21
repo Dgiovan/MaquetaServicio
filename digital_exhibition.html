@@ -9,32 +9,30 @@
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/animationsGallery.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animationsGallery.css">
 
 </head>
 <body onload="dismis();" class="container" >
 
-	<header>
-		
-		<section id="banner" > 	
+  <header class="shadow fx-betwen fx-wrap">
+    <img src="img\logosunamfes.jpg" alt="fes aragon">
+  </header>
 
-				<h4 class="textColorBoldWhite simpleMargin">Exposicion digital</h4>
+    <section id="banner" class="mbanner" >  
 
-				<h1 class="textColorBoldWhite">"Neza.. una realidad olvidada"</h1>
+        <h4 class="textColorBoldWhite simpleMargin">Exposicion digital</h4>
+        <h1 class="textColorBoldWhite">"Neza.. una realidad olvidada"</h1>
+  
+    </section> <!--end section banner-->
 
-	
-		</section><!-- end section banner-->
-	</header>
 
-
-	<section id="copyExpo" class="background_gray">
+	<section id="copyExpo" class="background_black">
 
 
 			<h4 class="text-center textColorBoldWhite simpleMargin">Francisco Veladiz</h4>	
 
-			<p class="textColorWhite">Lo Facultad de fatudios Superiores Aragón,a través de la Unidad de Extensíon Universitaria y el Departamento de Comunlcoción Social, en conjunto con el Colecclonista Francisco Veladiz, por primera vez, presentarán una Galería Virtual dentro de lo página de la FES Aragón, sobre lo Colección 'Neza ... una realidad olvidada'. La Colección, cuenta con más de 100 obras pictoricas de artistas originorios de esta Ciudad, centrando un especial énfasis en lo producción artástica Nezohuolcoyotlense, conservando así, un acervo que ilustra la visión de vida de estos artistas en su ciudod originoria</p>
+			<p class="textColorWhite textColorGray simpleMargin">Lo Facultad de fatudios Superiores Aragón,a través de la Unidad de Extensíon Universitaria y el Departamento de Comunlcoción Social, en conjunto con el Colecclonista Francisco Veladiz, por primera vez, presentarán una Galería Virtual dentro de lo página de la FES Aragón, sobre lo Colección 'Neza ... una realidad olvidada'. La Colección, cuenta con más de 100 obras pictoricas de artistas originorios de esta Ciudad, centrando un especial énfasis en lo producción artástica Nezohuolcoyotlense, conservando así, un acervo que ilustra la visión de vida de estos artistas en su ciudod originoria</p>
 
 		   <!-- <input class="text-center" type="button" name="show" value="" >-->
 		   <div class="row">
@@ -44,91 +42,122 @@
 		   </div>
              
 
-  <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+<div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
 
   <!--Controls-->
   <div class="controls-top">
-    <button class="textColorWhite text-center" href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></button>
-    <button class="textColorWhite text-center" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></button>
+    <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+        class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#carousel-example-multi" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
   </div>
   <!--/.Controls-->
 
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-multi" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-multi" data-slide-to="1"></li>
+    <li data-target="#carousel-example-multi" data-slide-to="2"></li>
+    <li data-target="#carousel-example-multi" data-slide-to="3"></li>
+    <li data-target="#carousel-example-multi" data-slide-to="4"></li>
+    <li data-target="#carousel-example-multi" data-slide-to="5"></li>
+  </ol>
+  <!--/.Indicators-->
 
-    <!--First slide-->
+  <div class="carousel-inner v-2" role="listbox">
+
     <div class="carousel-item active">
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-1.jpg"
+      <div class="col-12 col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="obras/obra-1.jpg"
             alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-2.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-3.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-4.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
     </div>
-    <!--/.First slide-->
-
-    <!--Second slide-->
     <div class="carousel-item">
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-1.jpg"
+      <div class="col-12 col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
             alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+          </div>
         </div>
       </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-2.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-3.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
-      <div class="col-md-3 mb-3">
-        <div class="card">
-          <img class="img-fluid" src="obras/obra-4.jpg"
-            alt="Card image cap">
-        </div>
-      </div>
-
     </div>
-    <!--/.Second slide-->
-
+    <div class="carousel-item">
+      <div class="col-12 col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-12 col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-12 col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="col-12 col-md-4">
+        <div class="card mb-2">
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
+            alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title font-weight-bold">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary btn-md btn-rounded">Button</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
-  <!--/.Slides-->
 
 </div>
+
+
+
+
 
 	</section><!-- end section copy_expo-->
 
@@ -136,7 +165,7 @@
 	<section id="exhibitionInfo" >
 
 		<div class="container background_gray">
-			<h2 class="text-center textColorBoldWhite simpleMargin">Exposición</h2>
+			<h2 class="text-center textColorBoldWhite ">Exposición</h2>
 
 			<h3 class="text-center textColorBoldWhite">"Neza.. una realidad olvidada"</h3>
 
