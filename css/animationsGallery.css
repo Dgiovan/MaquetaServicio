@@ -22,6 +22,6 @@
 
 .animationGallery{
 	animation: jackInTheBox;
-	animation-delay: 0.5s;
+	animation-delay: 0.2s;
 	animation-duration: 1.5s;
 }

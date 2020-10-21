@@ -9,7 +9,8 @@ body{
 
 .textColorWhite{color : #ffffff; }  
 .texcolorGray{color : #F2F2F2;}
-
+.texcolorBlack{color: #000;}
+.texcolorBlackbold{color: #000; font: bold; text-anchor: 12em;}
 .textColorBoldWhite{
 color : #ffffff; 
 font: bold;
@@ -50,7 +51,7 @@ header img{
 #btn-social{
     width: 46px;
     position: fixed;
-    right: 110px;
+    right: 10px;
     top: 50%;
     cursor: pointer;
     z-index: 100;
@@ -197,13 +198,13 @@ h5 {
 .btns{
         margin-top: 40px;   
         bottom: 40px;
-        background: #fff;
+        background: #F2F2F2;
     }
 
     .btn-green-moon {
     margin-right: 120px;
-    background: #fff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fff, #fff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #F2F2F2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F2F2F2, #fff);  /* Chrome 10-25, Safari 5.1-6 */
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #000;
     font-weight: bold;
