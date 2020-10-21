@@ -50,15 +50,19 @@ header img{
 #btn-social{
     width: 46px;
     position: fixed;
-    right: 10px;
-    top: 10%;
+    right: 110px;
+    top: 50%;
     cursor: pointer;
-    z-index: 99;
+    z-index: 100;
 }
-#btn-social :first-child{
+#btn-social ul li{
+            list-style: none;
+
+}
+#btn-social  :first-child{
     border-radius: 0 16px 0 0;
 }
-#btn-social :last-child{
+#btn-social  :last-child{
     border-radius: 0 0 16px 0;
 }
 #btn-social > *{
@@ -66,7 +70,7 @@ header img{
     font-size: 30px;
     transition: transform 0.2s ease-in-out;
 }
-#btn-social > *:hover{
+.btn-social > *:hover{
     transform: scale(0.9);
 }
 
