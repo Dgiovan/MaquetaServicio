@@ -25,3 +25,9 @@
 	animation-delay: 0.2s;
 	animation-duration: 1.5s;
 }
+
+.animationNameAuthor{
+	animation: jackInTheBox;
+	animation-delay: 0.5s;
+	animation-duration: 1.7s;
+}
