@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    color: white;
 }
 body{
 	background-color: #F2F2F2; 
@@ -44,6 +45,29 @@ header {
 header img{
     height: 89px;
     margin-right: 20px;
+}
+
+#btn-social{
+    width: 46px;
+    position: fixed;
+    right: 10px;
+    top: 10%;
+    cursor: pointer;
+    z-index: 99;
+}
+#btn-social :first-child{
+    border-radius: 0 16px 0 0;
+}
+#btn-social :last-child{
+    border-radius: 0 0 16px 0;
+}
+#btn-social > *{
+    height: 40px;
+    font-size: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+#btn-social > *:hover{
+    transform: scale(0.9);
 }
 
 
@@ -195,6 +219,7 @@ border-radius: 2px; }
 .fx-around{ display: flex; align-items: center; justify-content: space-around; }
 .fx-center{ display: flex; align-items: center; justify-content: center; }
 .fx-wrap{ flex-wrap: wrap; }
+
 
 .simpleMargin{  margin: 20px;}
 

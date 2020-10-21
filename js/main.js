@@ -53,36 +53,44 @@ itemName.classList.add("color");
 
 artistNames.appendChild(itemName);*/
 const listSlider    = document.getElementById("listSlider");
-const containerSlider = document.getElementById("carousel-with-lb");
-for(var i =0;i<5;i++){
+const containerSlider = document.getElementById("carrouselContainerSlides");
+
+for(var i =0;i<5;i++)
+{
 var itemName = document.createElement("LI");
 var slider  = document.createElement("DIV");
+
  itemName.setAttribute('data-target',"#carousel-with-lb");
  itemName.setAttribute('data-slide-to',i);
+
+
 if (i==0){
   itemName.classList.add("active", "secondary-color");
+  slider.classList.add("carousel-item", "active" ,"text-center");
 }else{
    itemName.classList.add( "secondary-color");
+   slider.classList.add("carousel-item","text-center");
 }
 
-slider.classList.add("carousel-inner", "mdb-lightbox" ,"row");
-slider.setAttribute('role',"listbox");
+for (var j = 0; j<3; j++) {
+ var figure = document.createElement("FIGURE");
+ figure.classList.add("col-md-3","d-md-inline-block");
+ var image = document.createElement("img");
+ image.setAttribute('src','https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg');
+ image.classList.add("img-fluid","animationGallery");
+ figure.appendChild(image);
+ slider.appendChild(figure);
+}
 
-var intoSlider = document.createElement("DIV");
-var figure1     = document.createElement("FIGURE");
-var figure2     = document.createElement("FIGURE");
-var image       = document.createElement("IMG");
-intoSlider.classList.add("carousel-item" ,"active", "text-center");
-image.setAttribute('src',"https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg");
-image.classList.add("img-fluid");
 
-figure1.appendChild(image);
-figure2.appendChild(image);
-intoSlider.appendChild(figure1);
-intoSlider.appendChild(figure2);
-slider.appendChild(intoSlider);
+containerSlider.appendChild(slider);
 listSlider.appendChild(itemName);
+
 }
+
+
+
+
 
 
 function readObjet()
@@ -339,6 +347,8 @@ $(document).ready(function(){
         });
     }
 });
+
+window.addEventListener('resize', () => { document.documentElement.style.setProperty('--vhprog', `${window.innerHeight * 0.01}px`); });
 /*let a = document.createElement("a");
 a.setAttribute('class', 'btn btn-lg');
 //a.setAttribute('href', 'showSignature(xyz)');

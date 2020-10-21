@@ -11,71 +11,48 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/animationsGallery.css">
+	<script src="https://kit.fontawesome.com/b1dc660265.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body onload="dismis();" class="container" >
 
-<!--<div class="container row"> <div class="loader-container  ">
-	<div class="loader text-center"></div>
-	<div class="loader2 text-center"></div>
-</div>
-</div>-->
 
   <header class="shadow fx-betwen fx-wrap">
     <img src="img\logosunamfes.jpg" alt="fes aragon">
   </header>
 
-    <section id="banner" class="mbanner" >  
-
+  <section id="banner" class="mbanner" >  
         <h4 class="textColorBoldWhite simpleMargin">Exposicion digital</h4>
         <h1 class="textColorBoldWhite">"Neza.. una realidad olvidada"</h1>
-  
-    </section> <!--end section banner-->
+  </section> <!--end section banner-->
 
 
-	<section id="copyExpo" class="background_black">
+  <section id="copyExpo" class="background_black">
 
 
-			<h4 class="text-center textColorBoldWhite simpleMargin">Francisco Veladiz</h4>	
+	    <h4 class="text-center textColorBoldWhite simpleMargin">Francisco Veladiz</h4>	
 
-			<p class="textColorWhite textColorGray simpleMargin">Lo Facultad de fatudios Superiores Aragón,a través de la Unidad de Extensíon Universitaria y el Departamento de Comunlcoción Social, en conjunto con el Colecclonista Francisco Veladiz, por primera vez, presentarán una Galería Virtual dentro de lo página de la FES Aragón, sobre lo Colección 'Neza ... una realidad olvidada'. La Colección, cuenta con más de 100 obras pictoricas de artistas originorios de esta Ciudad, centrando un especial énfasis en lo producción artástica Nezohuolcoyotlense, conservando así, un acervo que ilustra la visión de vida de estos artistas en su ciudod originoria</p>
+		<p class="textColorWhite textColorGray simpleMargin">Lo Facultad de fatudios Superiores Aragón,a través de la Unidad de Extensíon Universitaria y el Departamento de Comunlcoción Social, en conjunto con el Colecclonista Francisco Veladiz, por primera vez, presentarán una Galería Virtual dentro de lo página de la FES Aragón, sobre lo Colección 'Neza ... una realidad olvidada'. La Colección, cuenta con más de 100 obras pictoricas de artistas originorios de esta Ciudad, centrando un especial énfasis en lo producción artástica Nezohuolcoyotlense, conservando así, un acervo que ilustra la visión de vida de estos artistas en su ciudod originoria</p>
 
 		   <!-- <input class="text-center" type="button" name="show" value="" >-->
-		   <div class="row">
-		   	<h1 class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center"></h1>
-		   	 <button class=" btn btn-green-moon btn-rounded  col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center btnAnimation" onclick="show();">ver mas</button>
+		<div class="row">
+		 <h1 class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center"></h1>
+		 <button class=" btn btn-green-moon btn-rounded  col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center btnAnimation" onclick="show();">ver mas</button>
 		 		
-		   </div>
+		</div>
             
-<!--Carousel Wrapper-->
-<div id="carousel-with-lb" class="carousel slide carousel-multi-item simpleMargin" data-ride="carousel">
+		<!--Carousel Wrapper-->
+		<div id="carousel-with-lb" class="carousel slide carousel-multi-item simpleMargin" data-ride="carousel">
+		  <!--Indicators-->
+		 <ol id="listSlider" class="carousel-indicators"></ol>
+		  <!--/.Indicators-->
+	     <!--Slides and lightbox-->
+		<div id="carrouselContainerSlides" class="carousel-inner mdb-lightbox row" role="listbox"> </div>
+	    <!--/.Slides-->
 
-
-	  <!--Indicators-->
-	  <ol id="listSlider" class="carousel-indicators"></ol>
-	  <!--/.Indicators-->
-
-  <!--Slides and lightbox-->
-
-  <div class="carousel-inner mdb-lightbox row" role="listbox">
-    <!--First slide-->
-    <div class=" carousel-item active text-center">
-
-      <figure class="col-md-3 d-md-inline-block">
-
-       <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg"
-            class="img-fluid">
-      </figure>
-
-    </div>
-    <!--/.First slide-->
-
-  </div>
-  <!--/.Slides-->
-
-</div>
+		</div>
 <!--/.Carousel Wrapper-->
-
 
 	</section><!-- end section copy_expo-->
 
@@ -231,7 +208,21 @@ SzvEmELmadhPG6RvA</li>
 		</div>
 	</div>
 
-  
+
+  <div id="btn-social" >
+    <div class="fx-center col-sm-offset-12" style="background-color: #2e406e;"><i class="fab fa-facebook-square"></i></div>
+    <div class="fx-center col-sm-offset-12" style="background-color: #339dc5;"><i class="fab fa-twitter-square"></i></div>
+    <div class="fx-center col-sm-offset-12" style="background-color: #3f60a5;"><i class="fab fa-instagram"></i></div>
+    <div class="fx-center col-sm-offset-12" style="background-color: #e83028;"><i class="fab fa-youtube"></i></div>
+    <div class="fx-center col-sm-offset-12" style="background-color: #81b71a;"><i class="fab fa-spotify"></i></div>
+    <div class="fx-center col-sm-offset-12" style="background-color: #C92228;"><i class="fab fa-pinterest"></i></div>
+    <div class="fx-center col-sm-offset-12" style="background-color: #474646;"><i class="fas fa-envelope"></i></div>
+    <div class="fx-center col-sm-offset-12" style="background-color: #8bb6cc;"><i class="fas fa-search"></i></div> 
+  </div>
+
+col-sm-offset-2
+
+  <!-- </Botones de redes sociales> -->
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -239,7 +230,6 @@ SzvEmELmadhPG6RvA</li>
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>
-
 
 
 </html>
