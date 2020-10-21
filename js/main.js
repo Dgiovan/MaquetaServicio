@@ -257,7 +257,6 @@ function showartistGalleryDetails(Artist)
            cardBlog.appendChild(decriptionWork);   */
 
            seeWork.textContent = "ver obra completa";
-           seeWork.classList.add("background_black");
            footerCard.appendChild(seeWork);
 
            buttonwork.textContent = " Ver ";
