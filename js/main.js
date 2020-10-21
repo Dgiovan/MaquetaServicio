@@ -16,7 +16,21 @@ function show(){
   
 }
 
+$('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
 
+  for (var i=0;i<4;i++) {
+    next=next.next();
+    if (!next.length) {
+      next=$(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
 
 
 //const names =["Alfredo Arcos", "Martín Cuaya", "Lazaro Galicia", "Juan Palmerin (+)"," Mauricio Vega", "Ozcar Rivera", "David Duanny", "Alejandro Pérez Cruz", "Ismael Ponce", "Gustavo López", "CHEZ TREN 77", "Lupus", "Tacho(+)","Pablo Morán"];
@@ -38,7 +52,37 @@ itemName.textContent="Alfredo Arcos";
 itemName.classList.add("color");
 
 artistNames.appendChild(itemName);*/
+const listSlider    = document.getElementById("listSlider");
+const containerSlider = document.getElementById("carousel-with-lb");
+for(var i =0;i<5;i++){
+var itemName = document.createElement("LI");
+var slider  = document.createElement("DIV");
+ itemName.setAttribute('data-target',"#carousel-with-lb");
+ itemName.setAttribute('data-slide-to',i);
+if (i==0){
+  itemName.classList.add("active", "secondary-color");
+}else{
+   itemName.classList.add( "secondary-color");
+}
 
+slider.classList.add("carousel-inner", "mdb-lightbox" ,"row");
+slider.setAttribute('role',"listbox");
+
+var intoSlider = document.createElement("DIV");
+var figure1     = document.createElement("FIGURE");
+var figure2     = document.createElement("FIGURE");
+var image       = document.createElement("IMG");
+intoSlider.classList.add("carousel-item" ,"active", "text-center");
+image.setAttribute('src',"https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg");
+image.classList.add("img-fluid");
+
+figure1.appendChild(image);
+figure2.appendChild(image);
+intoSlider.appendChild(figure1);
+intoSlider.appendChild(figure2);
+slider.appendChild(intoSlider);
+listSlider.appendChild(itemName);
+}
 
 
 function readObjet()
@@ -71,7 +115,6 @@ function readObjet()
      }
   }
 }
-console.log("aaaaa2222"+$Data);
 
 function showButtonsArtist(namesFromJson){
 
