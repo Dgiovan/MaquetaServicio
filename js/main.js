@@ -199,10 +199,10 @@ function showartistGalleryDetails(Artist)
                var oncontent = data[i];
 
               var work      =document.createElement("div");
-                  work.classList.add("col-sm-6","col-md-4", "col-lg-3", "mt-4","background_black");
+                  work.classList.add("col-sm-6","col-md-4", "col-lg-3");
 
               var workCard = document.createElement("div");
-                  workCard.classList.add("card");
+                  workCard.classList.add("card", "mt-4","background_black");
               var image    = document.createElement("img");
                   image.classList.add("card-img-top", "img-thumbnail");
 
