@@ -219,7 +219,7 @@ function showartistGalleryDetails(Artist)
               var medidas    = document.createElement("p");
                   medidas.classList.add("meta"); 
               var decriptionWork = document.createElement("p");
-                  decriptionWork.classList.add("card-text"); 
+                  decriptionWork.classList.add("card-text","background_black"); 
 
               var footerCard = document.createElement("div");
                   footerCard.classList.add("card-footer");     
