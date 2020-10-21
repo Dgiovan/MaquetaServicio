@@ -207,7 +207,7 @@ function showartistGalleryDetails(Artist)
                   image.classList.add("card-img-top", "img-thumbnail");
 
               var cardBlog = document.createElement("div");
-                  cardBlog.classList.add("card-block");
+                  cardBlog.classList.add("card-block","background_black");
 
               var title    = document.createElement("h4"); 
                   title.classList.add("card-title","mt-3");
