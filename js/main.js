@@ -249,13 +249,15 @@ function showartistGalleryDetails(Artist)
                 }    
                 
                 })
-          /* cardBlog.appendChild(title);
+               cardBlog.appendChild(title);
+          /* 
            cardBlog.appendChild(fecha);
            cardBlog.appendChild(tecnica);
            cardBlog.appendChild(medidas);  
            cardBlog.appendChild(decriptionWork);   */
 
            seeWork.textContent = "ver obra completa";
+           seeWork.classList.add("background_black");
            footerCard.appendChild(seeWork);
 
            buttonwork.textContent = " Ver ";
