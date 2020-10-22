@@ -359,3 +359,41 @@ span.textContent = elemento;
 
 a.appendChild(il);
 a.appendChild(span);*/
+
+$(function(){
+ 
+    $(document).on( 'scroll', function(){
+ 
+      if ($(window).scrollTop() > 300) {
+      $('.scroll-top-wrapper').addClass('show');
+    } else {
+      $('.scroll-top-wrapper').removeClass('show');
+    }
+  });
+ 
+  $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+ 
+function scrollToTop() {
+  verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+  element = $('body');
+  offset = element.offset();
+  offsetTop = offset.top;
+  $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
+
+  "use strict";
+  //scroll to top
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+    } else {
+      $('.scrollup').fadeOut();
+    }
+  });
+  $('.scrollup').click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 1000);
+    return false;
+  });
