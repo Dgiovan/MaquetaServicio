@@ -145,7 +145,7 @@ a.setAttribute('class', 'btn btn-lg btn-success animationNameArtist');
 a.setAttribute('id',artist.id);
 
 a.onclick = function(){
-    showartistGalleryDetails(artist.author , artist.shortdescription);
+    showartistGalleryDetails(artist.author , artist.shortdescription, artist.numberofworks , artist.mainwork, artist.titlework);
 };
 
 
@@ -187,7 +187,7 @@ artistNames.appendChild(itemName);
 
 })*/
 
-function showartistGalleryDetails(Artist , descripcion)
+function showartistGalleryDetails(Artist , descripcion,numerobras,obrap,titulo)
 {
   
     nameArtist.textContent = Artist;
@@ -199,7 +199,7 @@ function showartistGalleryDetails(Artist , descripcion)
            data = $obras["Alfredo Arcos"];
 
               
-       for (var i = 0; i < data.length; i++) 
+       for (var i = 0; i < numerobras; i++) 
        {
 
                var oncontent = data[i];
@@ -236,13 +236,13 @@ function showartistGalleryDetails(Artist , descripcion)
                {
                 if(j==0)
                 {
-                    image.setAttribute("src",elemento);
+                    image.setAttribute("src",obrap);
                     image.classList.add("animationWorks");
                 }
                 if (j==1) {decriptionWork.textContent = elemento;}
                 if(j==2)
                 {
-                    title.textContent = elemento;
+                    title.textContent = titulo;
                 }
                 if(j==3){
                     fecha.textContent = elemento;
