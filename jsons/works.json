@@ -8,7 +8,7 @@
 		{"id":1,	
 		"author":"Naollin",
 	    "origin":"Nezahualcoyotl",
-		"numberofworks":2,
+		"numberofworks":12,
 		"technique":"grafity",
 		"titlework":"obras naollin",
 	    "shortdescription":"Hola nao leyendo desde json.",
@@ -37,6 +37,7 @@
 	    "origin":"Nezahualcoyotl",
 		"numberofworks":4,
 		"technique":"grafity",
+		"titlework":"obras juanito",
 	    "shortdescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 	    "mainwork":"https://4.bp.blogspot.com/-iZ8-L8w0oAE/VCrpuqV09iI/AAAAAAAAABo/_QtALNIT1oc/s1600/2.jpg"
 	    }
