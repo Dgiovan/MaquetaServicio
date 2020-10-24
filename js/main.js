@@ -231,13 +231,16 @@ function showartistGalleryDetails(Artist , descripcion,numerobras,obrap,titulo)
                   footerCard.classList.add("card-footer","background_black");     
 
               var seeWork    = document.createElement("small");  
-              var buttonwork = document.createElement("a");  
-               oncontent.forEach( function(elemento,j,oncontent)
+              var buttonwork = document.createElement("a");
+
+              
+               image.setAttribute("src",obrap);
+                    image.classList.add("animationWorks");  
+              /* oncontent.forEach( function(elemento,j,oncontent)
                {
                 if(j==0)
                 {
-                    image.setAttribute("src",obrap);
-                    image.classList.add("animationWorks");
+                   
                 }
                 if (j==1) {decriptionWork.textContent = elemento;}
                 if(j==2)
@@ -254,7 +257,7 @@ function showartistGalleryDetails(Artist , descripcion,numerobras,obrap,titulo)
                     medidas.textContent = elemento;
                 }    
                 
-                })
+                })*/
                cardBlog.appendChild(title);
           /* 
            cardBlog.appendChild(fecha);
