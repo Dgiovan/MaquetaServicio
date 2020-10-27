@@ -71,7 +71,6 @@ for (var j = 0; j<3; j++) {
  figure.classList.add("col-md-3","d-md-inline-block");
  var image = document.createElement("img");
  image.setAttribute('src','https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg');
-}
  image.classList.add("img-fluid","animationGallery");
  figure.appendChild(image);
  slider.appendChild(figure);
