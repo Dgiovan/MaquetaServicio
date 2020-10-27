@@ -78,7 +78,7 @@ for (var j = 0; j<3; j++) {
  var image = document.createElement("img");
  if (i==0 && j==0) {
 
- image.setAttribute('src','https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg' }else{
+ image.setAttribute('src','https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg'); }else{
 
  image.setAttribute('src','https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg');
 }
