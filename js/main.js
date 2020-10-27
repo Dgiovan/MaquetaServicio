@@ -1,3 +1,8 @@
+
+/*
+Autores Naollin Reyes, Jesus Giovanny
+*/
+
 let Data = new Array();
 function dismis(){
 	//alert("se oculta");
