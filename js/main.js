@@ -2,8 +2,6 @@ let Data = new Array();
 function dismis(){
 	//alert("se oculta");
 	document.getElementById('exhibitionInfo').style.display="none";
-  var nomber= Math.random(328762836386);
-  console.log(nomber);
   readObjet();
 }
 
@@ -47,11 +45,7 @@ const artistNames       = document.getElementById("artistNamesList");
 const artistWork        = document.getElementById("artistListWork");
 const nameArtist        = document.getElementById("artistNameDetail");
 const decriptionArtist  = document.getElementById("artistDescriptionDetail");
-/*itemName =document.createElement("LI");
-itemName.textContent="Alfredo Arcos";
-itemName.classList.add("color");
 
-artistNames.appendChild(itemName);*/
 const listSlider    = document.getElementById("listSlider");
 const containerSlider = document.getElementById("carrouselContainerSlides");
 
@@ -76,10 +70,6 @@ for (var j = 0; j<3; j++) {
  var figure = document.createElement("FIGURE");
  figure.classList.add("col-md-3","d-md-inline-block");
  var image = document.createElement("img");
- if (i==0 && j==0) {
-
- image.setAttribute('src','https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg'); }else{
-
  image.setAttribute('src','https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg');
 }
  image.classList.add("img-fluid","animationGallery");
@@ -157,34 +147,6 @@ artistNames.appendChild(itemName);
 }
 
 }
-//var i =0;
-
-
-/*$namesFromJson.forEach( function(elemento ,i,$namesFromJson ){
-
-var itemName = document.createElement("LI");
-var       a = document.createElement("button");
-var       il = document.createElement("i");
-var       span = document.createElement("span");
-
-
-itemName.classList.add("color");
-a.setAttribute('class', 'btn btn-lg btn-success animationNameArtist');
-a.setAttribute('id',elemento+i);
-
-a.onclick = function(){
-    showartistGalleryDetails(elemento);
-};
-
-
-span.textContent= elemento;
-il.classList.add("glyphicon","glyphicon-dashboard","pull-left");
-a.appendChild(il);
-a.appendChild(span);
-itemName.appendChild(a);
-artistNames.appendChild(itemName);
-
-})*/
 
 function showartistGalleryDetails(Artist , descripcion,numerobras,obrap,titulo)
 {
@@ -235,34 +197,9 @@ function showartistGalleryDetails(Artist , descripcion,numerobras,obrap,titulo)
               
                image.setAttribute("src",obrap);
                     image.classList.add("animationWorks");  
-              /* oncontent.forEach( function(elemento,j,oncontent)
-               {
-                if(j==0)
-                {
-                   
-                }
-                if (j==1) {decriptionWork.textContent = elemento;}
-                if(j==2)
-                {
-                    title.textContent = titulo;
-                }
-                if(j==3){
-                    fecha.textContent = elemento;
-                }
-                if(j==4){
-                    tecnica.textContent = elemento;
-                }
-                if(j==5){
-                    medidas.textContent = elemento;
-                }    
-                
-                })*/
+
                cardBlog.appendChild(title);
-          /* 
-           cardBlog.appendChild(fecha);
-           cardBlog.appendChild(tecnica);
-           cardBlog.appendChild(medidas);  
-           cardBlog.appendChild(decriptionWork);   */
+
 
            seeWork.textContent = "ver obra completa";
            footerCard.appendChild(seeWork);
@@ -272,12 +209,6 @@ function showartistGalleryDetails(Artist , descripcion,numerobras,obrap,titulo)
            buttonwork.setAttribute("href","#");
            buttonwork.setAttribute("data-toggle","modal");
            buttonwork.setAttribute("data-target","#showDetailWork");
-          /* 
-           buttonwork.classList.add("btn", "btn-secondary" ,"float-right", "btn-sm");
-           buttonwork.onclick = function(){
-                    alert("se muestra");
-                };*/
-
 
            footerCard.appendChild(buttonwork);
 
@@ -287,10 +218,7 @@ function showartistGalleryDetails(Artist , descripcion,numerobras,obrap,titulo)
            work.appendChild(workCard);    
            artistWork.appendChild(work);
         }
-     /*     data.forEach( function(elemento,j,data){
-
-         
-    }) */      
+     
 
    
 }
@@ -357,16 +285,7 @@ $(document).ready(function(){
 });
 
 window.addEventListener('resize', () => { document.documentElement.style.setProperty('--vhprog', `${window.innerHeight * 0.01}px`); });
-/*let a = document.createElement("a");
-a.setAttribute('class', 'btn btn-lg');
-//a.setAttribute('href', 'showSignature(xyz)');
-let il = document.createElement("i");
-il.classList.add("glyphicon glyphicon-link pull-left");
-let span = document.createElement("span");
-span.textContent = elemento;
 
-a.appendChild(il);
-a.appendChild(span);*/
 
 $(function(){
  
